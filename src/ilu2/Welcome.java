@@ -11,6 +11,13 @@ public class Welcome {
 		}else if(input.split(",").length==2) {
 			String[] name=input.split(",");
 			resultat.append("Hello, "+name[0].substring(0, 1).toUpperCase() + name[0].substring(1)+", "+name[1].substring(0, 1).toUpperCase() + name[1].substring(1));
+		}else if(input.split(",").length>2) {
+			String[] names=input.split(",");
+			resultat.append("Hello");
+			for (String name : names) {
+				resultat.append(", ");
+				resultat.append(name.substring(0, 1).toUpperCase() + name.substring(1));
+			}
 			System.out.println(resultat.toString());
 		}else{		
 			resultat.append("Hello, "+input.substring(0, 1).toUpperCase() + input.substring(1));
