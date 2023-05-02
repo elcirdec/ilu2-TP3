@@ -3,9 +3,7 @@ package ilu2;
 public class Welcome {
 
 	public static String welcome(String input) {
-		StringBuilder resultat = new StringBuilder();
-		System.out.println(input);
-		
+		StringBuilder resultat = new StringBuilder();		
 		if(input == null || input.isEmpty() || input.isBlank()) {
 			resultat.append("Hello, my friend");
 
@@ -58,7 +56,7 @@ public class Welcome {
 				resultat.append(" !");
 				System.out.println(resultat.toString());
 			}else if(names.length==2) {
-				resultat.append("Hello, "+names[0].substring(0, 1).toUpperCase() + names[0].substring(1)+", "+names[1].substring(0, 1).toUpperCase() + names[1].substring(1));
+				resultat.append("Hello, "+names[0].substring(0, 1).toUpperCase() + names[0].substring(1)+" and "+names[1].substring(0, 1).toUpperCase() + names[1].substring(1));
 			}else if(names.length>2) {
 				resultat.append("Hello");
 				int occMin=0;				
@@ -74,10 +72,9 @@ public class Welcome {
 				
 			}else{		
 				resultat.append("Hello, "+input.substring(0, 1).toUpperCase() + input.substring(1));
-				System.out.println("else "+resultat.toString());
 			}
 		}
-
+		System.out.println(resultat.toString());
 		return resultat.toString();
 	}
 }

@@ -46,4 +46,8 @@ class WelcomeTest {
 		assertEquals(Welcome.welcome("bob, AMY, jerry, JACK"), "Hello, Bob and Jerry. AND HELLO, AMY AND JACK !");
 	}
 	
+	@Test
+	void testITER_8() {
+		assertEquals(Welcome.welcome("bob    , amy   "), "Hello, Bob and Amy");
+	}
 }
