@@ -25,20 +25,25 @@ class WelcomeTest {
 		assertEquals(Welcome.welcome("TOM"), "HELLO, TOM");
 	}
 	
+//	@Test
+//	void testITER_4() {
+//		assertEquals(Welcome.welcome("amy,bob"), "Hello, Amy, Bob");
+//	}
+//	
+//	@Test
+//	void testITER_5() {
+//		assertEquals(Welcome.welcome("Amy,bob,jerry"), "Hello, Amy, Bob, Jerry");
+//	}
+//	
+//	@Test
+//	void testITER_6() {
+//		assertEquals(Welcome.welcome("Amy,BOB,Jerry"), "Hello, Amy, Jerry. AND HELLO, BOB !");
+//	}
+//	
 	@Test
-	void testITER_4() {
-		assertEquals(Welcome.welcome("amy,bob"), "Hello, Amy, Bob");
+	void testITER_7() {
+		assertEquals(Welcome.welcome("bob, amy, jerry"), "Hello, Bob, Amy and Jerry");
+		assertEquals(Welcome.welcome("bob, AMY, jerry, JACK"), "Hello, Bob and Jerry. AND HELLO, AMY AND JACK !");
 	}
 	
-	@Test
-	void testITER_5() {
-		assertEquals(Welcome.welcome("Amy,bob,jerry"), "Hello, Amy, Bob, Jerry");
-	}
-	
-	@Test
-	void testITER_6() {
-		assertEquals(Welcome.welcome("Amy,BOB,Jerry"), "Hello, Amy, Jerry. AND HELLO, BOB !");
-	}
-	
-
 }
